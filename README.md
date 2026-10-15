@@ -1,6 +1,10 @@
-# Hi, I'm Luis Herrera 👋
+<img src="assets/banner.svg" width="100%" alt="Luis Herrera — Backend & Mobile Developer">
 
-**Backend & mobile developer** · Kotlin · Python · Java
+<p align="center">
+  <img src="assets/typing.svg" alt="Backend & mobile developer · Kotlin, Ktor, Spring Boot, FastAPI · Android apps with Jetpack Compose · Building Articulate on AWS">
+</p>
+
+## Hi there <img src="assets/wave.svg" width="30" height="30" alt="👋">
 
 I build APIs and microservices with **Ktor**, **Spring Boot** and **FastAPI**, Android apps with **Jetpack Compose**, and ship them to production with **Docker** and **AWS**. I'm also into robotics and have worked with **ROS 2**.
 
@@ -66,6 +70,16 @@ Backend for [**Articulate: Vocabulary Mastery App**](https://apps.apple.com/app/
 | **Kbot** · [server](https://github.com/luisherrera-me/kbot-server) · [gateway](https://github.com/luisherrera-me/kbotGateway) · [ROS](https://github.com/luisherrera-me/kbot_ros) · [app](https://github.com/luisherrera-me/Kubot-App) | Robotics project: a ROS 2 package, a Kotlin server and gateway, and an Android app | Kotlin · Python · ROS 2 |
 | [**Talento Humano**](https://github.com/luisherrera-me/backend-talento-humano) | Backend for human-resources management | NestJS · TypeScript |
 | [**ApiDepthAnything**](https://github.com/luisherrera-me/ApiDepthAnything) | Depth-estimation API using the Depth Anything model | Python |
+
+---
+
+## 🐍 Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luisherrera-me/luisherrera-me/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luisherrera-me/luisherrera-me/output/github-snake.svg">
+  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/luisherrera-me/luisherrera-me/output/github-snake.svg">
+</picture>
 
 ---
 

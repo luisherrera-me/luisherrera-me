@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Luis Herrera — Backend &amp; Mobile Developer">
+  <title>Luis Herrera — Backend &amp; Mobile Developer</title>
+  <defs>
+    <!-- Repeats every 1200px, so sliding the 2400px band by -1200px loops seamlessly -->
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="2400" y2="0">
+      <stop offset="0" stop-color="#7F52FF"/>
+      <stop offset="0.1667" stop-color="#087CFA"/>
+      <stop offset="0.3333" stop-color="#00BFA6"/>
+      <stop offset="0.5" stop-color="#7F52FF"/>
+      <stop offset="0.6667" stop-color="#087CFA"/>
+      <stop offset="0.8333" stop-color="#00BFA6"/>
+      <stop offset="1" stop-color="#7F52FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.45"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="1200" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .band { animation: slide 14s linear infinite; }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-1200px); } }
+
+    .name, .role, .stack { font-family: "Segoe UI", Ubuntu, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; fill: #fff; text-anchor: middle; }
+    .name  { font-size: 74px; font-weight: 700; letter-spacing: 1px; }
+    .role  { font-size: 28px; font-weight: 500; opacity: 0.92; }
+    .stack { font-size: 20px; font-weight: 400; opacity: 0.75; letter-spacing: 2px; }
+    /* Visible by default; the fade-in only applies where animations run (backwards fill covers the delay) */
+    .in { animation: rise 0.9s ease-out both; }
+    .d1 { animation-delay: 0.15s; }
+    .d2 { animation-delay: 0.45s; }
+    .d3 { animation-delay: 0.75s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    .dot { fill: #fff; animation: twinkle 4s ease-in-out infinite; }
+    @keyframes twinkle { 0%, 100% { opacity: 0.08; } 50% { opacity: 0.45; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .band, .dot { animation: none; }
+      .in { animation: none; }
+    }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="300" fill="#0d1117"/>
+    <rect class="band" width="2400" height="300" fill="url(#flow)" opacity="0.9"/>
+    <rect width="1200" height="300" fill="url(#glow)"/>
+    <circle class="dot" cx="110" cy="70" r="3"/>
+    <circle class="dot" cx="230" cy="220" r="2" style="animation-delay:1.2s"/>
+    <circle class="dot" cx="1010" cy="60" r="2.5" style="animation-delay:2.1s"/>
+    <circle class="dot" cx="1110" cy="235" r="3" style="animation-delay:0.6s"/>
+    <circle class="dot" cx="940" cy="250" r="2" style="animation-delay:3s"/>
+    <circle class="dot" cx="300" cy="45" r="2" style="animation-delay:2.6s"/>
+    <text class="name in d1" x="600" y="145">Luis Herrera</text>
+    <text class="role in d2" x="600" y="198">Backend &amp; Mobile Developer</text>
+    <text class="stack in d3" x="600" y="242">KOTLIN · PYTHON · JAVA · AWS</text>
+  </g>
+</svg>
